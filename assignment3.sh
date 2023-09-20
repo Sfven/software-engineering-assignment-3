@@ -48,10 +48,8 @@ product=$(multiply "${array[@]}")
 echo "Total Product: $product"
 reversed_array=($(reverse "${array[@]}"))
 echo "Reversed array: ${reversed_array[@]}"
-
-<<comment
 reversed_sum=$(add "${reversed_array[@]}")
 echo "Total Reversed Sum: $reversed_sum"
 reversed_product=$(multiply "${reversed_array[@]}")
 echo "Total Reversed Product: $reversed_product"
-comment
+
