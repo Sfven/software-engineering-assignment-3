@@ -1,6 +1,6 @@
 #!/bin/bash
 
-printf "Enter your numbers below. Enter '~' to finish entering numbers.\n"
+printf "Enter your numbers below. Press enter after each entry. Enter '~' to finish entering numbers.\n"
 
 while read inputs
 do
@@ -46,10 +46,10 @@ sum=$(add "${array[@]}")
 echo "Total Sum: $sum"
 product=$(multiply "${array[@]}")
 echo "Total Product: $product"
-
-<<comment
 reversed_array=($(reverse "${array[@]}"))
 echo "Reversed array: ${reversed_array[@]}"
+
+<<comment
 reversed_sum=$(add "${reversed_array[@]}")
 echo "Total Reversed Sum: $reversed_sum"
 reversed_product=$(multiply "${reversed_array[@]}")
