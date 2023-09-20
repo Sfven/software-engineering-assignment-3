@@ -1,6 +1,5 @@
 #!/bin/bash
 
-<<comment
 printf "Enter your numbers below. Enter '~' to finish entering numbers.\n"
 
 while read inputs
@@ -8,9 +7,6 @@ do
   [ "$inputs" == "~" ] && break
   array=("${array[@]}" $inputs)
 done
-comment
-
-array=( "$@" )
 
 add() {
 
